@@ -3,7 +3,6 @@ Web-API for [geojs.io](https://www.geojs.io) which is an highly available REST/J
 
 ## Example
 ```cs
-using System;
 using GeoJsApi;
 
 namespace Application
