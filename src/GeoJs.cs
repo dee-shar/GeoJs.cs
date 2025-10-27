@@ -1,4 +1,3 @@
-using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
@@ -45,6 +44,7 @@ namespace GeoJsApi
             var response = await httpClient.GetAsync($"{apiUrl}/ip/country/{ipAddress}.json");
             return await response.Content.ReadAsStringAsync();
         }
+        
         public async Task<string> GetGeoByIp(string ipAddress)
         {
             var response = await httpClient.GetAsync($"{apiUrl}/ip/geo/{ipAddress}.json");
